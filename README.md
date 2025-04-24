@@ -29,40 +29,40 @@ Panini8 Assignment is a web application that allows users to view, create, and m
 To run this project locally, follow these steps:
 1. *Clone the repository*
    bash
-   git clone https://github.com/kundan761/Panini8_assignment.git
+   git clone https://github.com/md-irshad-alam/panani8software.git
    
 
-2. *Navigate to the project directory*
+3. *Navigate to the project directory*
    bash
    cd Panini8_assignment
    
 
-3. *Install dependencies for the backend*
+4. *Install dependencies for the backend*
    bash
    cd backend
    npm install
    
 
-4. *Install dependencies for the frontend*
+5. *Install dependencies for the frontend*
    bash
    cd ../frontend
    npm install
    
 
-5. *Set up environment variables* (create a .env file in the backend directory)
+6. *Set up environment variables* (create a .env file in the backend directory)
    plaintext
    PORT= your_port_number
    MONGO_URI=your_mongodb_uri
    JWT_SECRET=your_jwt_secret
    
 
-6. *Run the backend server*
+7. *Run the backend server*
    bash
    cd backend
    npm run server
    
 
-7. *Run the frontend application*
+8. *Run the frontend application*
    bash
    cd ../frontend
    npm run dev
