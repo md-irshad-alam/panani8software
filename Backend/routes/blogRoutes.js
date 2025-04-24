@@ -4,6 +4,7 @@ const Blog = require("../model/blogModels");
 const authMiddleware = require("../middlewares/auth");
 const blogRouter = express.Router();
 
+// Create a new blog post
 blogRouter.post("/createBlog", authMiddleware, async (req, res) => {
   try {
     const { title, content, tags } = req.body;
@@ -41,6 +42,7 @@ blogRouter.get("/getLatestBlog", async (req, res) => {
   }
 });
 
+// Get all blog posts created by a specific user
 blogRouter.get("/getBlogByUser", authMiddleware, async (req, res) => {
   try {
     const blogs = await Blog.find({ createdBy: req.user.userId }).populate(

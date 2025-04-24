@@ -7,11 +7,11 @@ const blogRoutes = require("./routes/blogRoutes");
 const app = exprees();
 app.use(exprees.json());
 app.use(cors());
-
+// for testing
 app.get("/", (req, res) => {
   res.send("API is running successfully");
 });
-
+// actual route handler
 app.use("/api/user", userRoutes);
 app.use("/api/blog", blogRoutes);
 
